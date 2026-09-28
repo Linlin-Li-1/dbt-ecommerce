@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: stg_orders
+    description: "Cleaned and standardized order-level data."
+
+    columns:
+      - name: order_id
+        description: "Unique identifier for an order."
+
+      - name: customer_id
+        description: "Identifier for the customer who placed the order."
+
+      - name: ordered_at
+        description: "Timestamp when the order was placed."
+
+      - name: store_id
+        description: "Identifier for the store associated with the order."
+
+      - name: subtotal
+        description: "Order subtotal before tax."
+
+      - name: tax_paid
+        description: "Tax paid for the order."
+
+      - name: order_total
+        description: "Total amount paid for the order."
